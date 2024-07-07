@@ -1,0 +1,49 @@
+/* Used for constitution assignment */
+
+body {
+    padding: 0;
+    display: flex;
+    /* Animated background */
+    background: linear-gradient(45deg, #795479, #567a7a, #720e72, #116e6e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate; 
+    /* text color */
+    color: rgb(177, 173, 173);
+    /* overall font for webpage */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes gradientAnimation 
+{
+    /* 0% means the background image starts at top-left corner */
+    0% {
+        background-position: 0% 0%;
+    }
+    /* 100% for final position = image ends at bottom-right corner */
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+article {
+    padding: 20px;
+}
+
+h1 {
+    font-size: xx-large; /* it is better to use relative sizing for text sizes */
+    color:coral;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-size: x-large;
+    color: yellow;
+    text-decoration: underline;
+}
+
+p {
+    /* it is better to use relative sizing for text sizes */
+    font-size: large;
+    line-height: 1.5;
+}
